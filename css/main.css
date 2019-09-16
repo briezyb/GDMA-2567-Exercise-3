@@ -30,6 +30,24 @@
 /*--------------------------------------------------------------
 4.0 - ELEMENTS 
 -------------------------------------------------------------- */
+/* -- LISTS -- */
+
+ul{
+	padding: none;
+	font-family: 'Open Sans', sans-serif;
+	color: #585858;
+	
+}
+
+li {
+	padding-bottom: 1.3em;
+	font-weight: 600;
+	list-style-image:url("../img/list-style.png");
+	font-size: 1.3rem;
+	line-height: 1.4em;
+}
+
+
 
 /* -- TYPOGRAPHY -- */ 
 
@@ -40,15 +58,27 @@ p{
 	color: #585858;
 }
 
+header p{
+	color: #FFF;
+}
+
 h1{
 	font-size: 2.9rem;
 	font-family: 'Overpass', sans-serif;
 	line-height: 1.1em;
+	color: #FFF;
 }
 
+h2{
+	font-family: 'Overpass', sans-serif;
+	font-size: 2.6rem;
+	color:#E000D8;
+	margin-top: 3em;
+}
 
-
-
+span{
+	color:#E000D8;
+}
 
 
 
@@ -62,7 +92,10 @@ h1{
 		}
 	h1{
 	font-size: 3.3rem;
-}
+	}
+    h2{
+        font-size: 2.4rem;
+    }
 
 }
 
@@ -77,6 +110,9 @@ h1{
 	h1{
 	font-size: 3.7rem;
 }
+	h2{
+		font-size: 2.8rem;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -101,6 +137,31 @@ h1{
 		width: 50%;
 	}
 }
+
+#hero {
+	height: 100%;
+	background-image: url("../img/hero.jpg");
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+ 	background-size: cover;
+	padding-top: 4em;
+	padding-bottom: 5em;
+}
+
+/*--------------------------------------------------------------
+6.0 - Components
+-------------------------------------------------------------- */
+
+/* -- BUTTONS -- */
+
+a {
+	text-decoration: none;
+	color:#1C1C77;
+	font-weight: 800;
+	font-family: 'Overpass', sans-serif;
+}
+
 
 
 
