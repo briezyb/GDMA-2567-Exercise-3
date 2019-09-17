@@ -53,33 +53,24 @@ li {
 
 p{
 	font-size: 1.3rem;
-	line-height: 1.7em;
+	line-height: 2em;
 	font-family: 'Open Sans', sans-serif;
 	color: #585858;
-}
-
-header p{
-	color: #FFF;
 }
 
 h1{
 	font-size: 2.9rem;
 	font-family: 'Overpass', sans-serif;
 	line-height: 1.1em;
-	color: #FFF;
+	color:#E6881C;
 }
 
 h2{
 	font-family: 'Overpass', sans-serif;
 	font-size: 2.6rem;
-	color:#E000D8;
+	color:#1C1C77;
 	margin-top: 3em;
 }
-
-span{
-	color:#E000D8;
-}
-
 
 
 @media only screen and (min-width: 768px){
@@ -125,10 +116,16 @@ span{
 	width: 90%;
 }
 
+@media only screen and (max-width:500px) {
+	.hide-sm {
+		display: none;
+	}
+}
+
 
 @media only screen and (min-width: 768px){
 	.wrapper {
-		width: 60%;
+		width: 70%;
 	}
 }
 
@@ -138,16 +135,6 @@ span{
 	}
 }
 
-#hero {
-	height: 100%;
-	background-image: url("../img/hero.jpg");
-	background-attachment: fixed;
-  	background-position: center;
-  	background-repeat: no-repeat;
- 	background-size: cover;
-	padding-top: 4em;
-	padding-bottom: 5em;
-}
 
 /*--------------------------------------------------------------
 6.0 - Components
