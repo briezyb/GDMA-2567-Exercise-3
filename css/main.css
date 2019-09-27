@@ -33,59 +33,77 @@
 /* -- LISTS -- */
 
 ul{
-	padding: none;
+	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 	color: #585858;
+	margin-bottom: 2em;
 	
 }
 
 li {
-	padding-bottom: 1.3em;
-	font-weight: 600;
-	list-style-image:url("../img/list-style.png");
-	font-size: 1.3rem;
-	line-height: 1.4em;
+  list-style: url("../img/list-style.png");
+  line-height: 1.4em;
 }
 
 
 
 /* -- TYPOGRAPHY -- */ 
 
-p{
-	font-size: 1.3rem;
-	line-height: 2em;
-	font-family: 'Open Sans', sans-serif;
-	color: #585858;
+html{
+		font-size:1rem;	
+	}
+
+h1 {
+  font: 2.2rem/1.1em 'Overpass', sans-serif;
+  color: #E6881C;
 }
 
-h1{
-	font-size: 2.9rem;
-	font-family: 'Overpass', sans-serif;
-	line-height: 1.1em;
-	color:#E6881C;
+h2 {
+  font: 1.8rem 'Overpass', sans-serif;
+  color: #1C1C77;
+  margin-top: 1em;
+	margin-bottom: 0;
+
 }
 
-h2{
-	font-family: 'Overpass', sans-serif;
-	font-size: 2.6rem;
+p {
+  font: 1.1rem/1.7em 'Open Sans', sans-serif;
+  color: #585858;
+}
+
+header div p {
+	font-size: .8rem;
+	line-height: .8em;
+}
+
+header div p:last-child{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+a{
+	text-decoration: none;
 	color:#1C1C77;
-	margin-top: 3em;
+	font-family: 'Overpass', sans-serif;
+	
+}
+
+a:hover {
+	color: #597EC7;
 }
 
 
 @media only screen and (min-width: 768px){
-	html{
-		font-size:1rem;
-		
-	}
 	p{
-		line-height: 1.8em;	
+		font-size: 1rem;
+		line-height: 1.7em;
+		margin-bottom: 1.4em;
 		}
 	h1{
-	font-size: 3.3rem;
+	font-size: 2.7rem;
 	}
     h2{
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
 }
@@ -97,12 +115,13 @@ h2{
 	}
 	p{
 		line-height: 1.8em;
+		margin-top: 0;
 	}
 	h1{
-	font-size: 3.7rem;
+	font-size: 3.4rem;
 }
 	h2{
-		font-size: 2.8rem;
+		font-size: 2rem;
 	}
 }
 
@@ -116,13 +135,6 @@ h2{
 	width: 90%;
 }
 
-@media only screen and (max-width:500px) {
-	.hide-sm {
-		display: none;
-	}
-}
-
-
 @media only screen and (min-width: 768px){
 	.wrapper {
 		width: 70%;
@@ -135,6 +147,9 @@ h2{
 	}
 }
 
+.col-lg-6{
+	margin-bottom: 0;
+}
 
 /*--------------------------------------------------------------
 6.0 - Components
@@ -142,14 +157,15 @@ h2{
 
 /* -- BUTTONS -- */
 
-a {
-	text-decoration: none;
-	color:#1C1C77;
-	font-weight: 800;
-	font-family: 'Overpass', sans-serif;
+/*--------------------------------------------------------------
+7.0 - Utilities
+-------------------------------------------------------------- */
+
+@media only screen and (max-width:500px) {
+	.hide-sm {
+		display: none;
+	}
 }
-
-
 
 
 
